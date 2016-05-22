@@ -1,3 +1,1 @@
-function myCode() {
-	$(".warning").hide().show("slow");
-}
+$(".main-content span").text("6500");
