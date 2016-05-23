@@ -10,8 +10,9 @@
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="js/animsition/animsition.min.css">
-        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="js/slick/slick.css">
+        <link rel="stylesheet" href="js/slick/slick-theme.css">
+        <link rel="stylesheet" href="css/main.css">        
     </head>
     <body>
       <div class="row container animsition">
@@ -117,7 +118,13 @@
       <script src="js/slick/slick.min.js"></script>
       <script src="js/main.js"></script>
       <script>
-        $('.slides').slick();
+        $('.slides').slick({
+          fade: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          arrows: false,
+          dots: true
+        });
       </script>
     </body>
 </html>
